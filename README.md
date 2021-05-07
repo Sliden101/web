@@ -1,3 +1,2 @@
 # web
-ok
-nigga
+dont be racist
