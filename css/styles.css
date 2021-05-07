@@ -139,9 +139,10 @@ body {
 }
 
 /*!DarkMode!*/
+
 @media (prefers-color-scheme: dark) {
   .dark-theme {
     background-color: black;
-    color: white;
+    transition: all 0.5s cubic-bezier(0.55, 0.06, 0.68, 0.19);
   }
 }
