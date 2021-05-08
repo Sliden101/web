@@ -1,18 +1,12 @@
 body {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background: #bdbdbd;
+  background-color: rgb(156, 198, 212);
   color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   font-family: "Roboto", sans-serif;
   height: 100vh;
 }
 .calculator-container {
   background: #f5f5f5;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,7 +33,7 @@ body {
   border-radius: 10px 10px 0px 0px;
 }
 .button-container {
-  border: 1px solid #1f1f1f;
+  border: 2px solid #1f1f1f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,12 +126,57 @@ body {
 .dark-btn:active {
   background-color: rgb(226, 226, 226);
 }
-
+.dark-mode-custom {
+  margin-bottom: 10px;
+  position: relative;
+  margin-left: 48%;
+}
 /*!DarkMode!*/
 
 @media (prefers-color-scheme: dark) {
   .dark-theme {
-    background-color: black;
+    background-color: rgb(0, 25, 34);
     transition: all 0.5s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+  }
+}
+/*!Responsive, to center the dark mode!*/
+@media only screen and (max-width: 320px) {
+  .dark-mode-custom {
+    margin-left: 42%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+  .dark-mode-custom {
+    margin-left: 42%;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 425px) {
+  .dark-mode-custom {
+    margin-left: 43%;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+  .dark-mode-custom {
+    margin-left: 45%;
+  }
+}
+@media only screen and (min-width: px) and (max-width: 1024px) {
+  .dark-mode-custom {
+    margin-left: 46%;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .dark-mode-custom {
+    margin-left: 47%;
+  }
+}
+@media only screen and (min-width: 1440px) and (max-width: 2560px) {
+  .dark-mode-custom {
+    margin-left: 48%;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .dark-mode-custom {
+    margin-left: 49%;
   }
 }
